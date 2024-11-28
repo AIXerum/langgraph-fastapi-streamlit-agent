@@ -59,10 +59,6 @@ async def main():
         if st.button(":material/delete: Reset chat history", use_container_width=True):
             st.session_state.clear()
 
-        "[View the source code](https://github.com/VanJohnPK/langgraph-fastapi-streamlit-agent)"
-        st.caption("Inspired by [Joshua](https://github.com/JoshuaC215) in Oakland")
-        st.caption("Made with :material/favorite: by darkVinci in Shanghai")
-
     # Draw existing messages
     if "messages" not in st.session_state:
         st.session_state.messages = []
